@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/index.css" rel="stylesheet">
+    <script src="JS/banner.js"></script>
+    <script src="JS/login.js"></script>
+    <title>Đăng Ký</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="">Thể Loại</a>
+                    <ul class="submenu">
+                        <li>Tất Cả</li>
+                        <li>Thiếu Nhi</li>
+                        <li>Công Nghệ</li>
+                        <li>Kinh Tế</li>
+                        <li>Lịch Sử</li>
+                    </ul>
+                </li>
+                <li><a href="">Liên Hệ</a></li>
+                <li>
+                    <input type="search" id="search" placeholder="Tìm kiếm">
+                </li>
+                <li><a href="">Đăng Nhập</a></li>
+                <li><a href="">Đăng Ký</a></li>
+                <li><a href="">Giỏ Hàng</a></li>
+            </ul>
+
+        </div>
+        <div class="banner">
+            <div class="slide">
+                <img id="img" onclick="changeImage()" src="banner1.jpg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                
+            </div>
+            <div class="content">
+                <form id = "reg" onSubmit="return Dangky()">
+                    <table>
+                        <caption>ĐĂNG KÝ THÀNH VIÊN</caption>
+                        <tr>
+                            <td>Tên đăng nhập</td>
+                            <td><input type="text" name="ten" required></td>
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu</td>
+                            <td><input type="password" name="pass" required></td>
+                        </tr>
+                        <tr>
+                            <td>Ngày sinh</td>
+                            <td><input type="date" name="ns" required></td>
+                        </tr>
+                        <tr>
+                            <td>Giới tính </td>
+                            <td>
+                                <input type="radio" name = "gt" value = "Nam" checked>Nam
+                                <input type="radio" name = "gt" value = "Nữ">Nữ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Đăng ký"></td>
+                            <td><input type="reset" value="Hủy"></td>
+                        </tr>
+                        <tr>
+                            <td colspan = "2">
+                                <textarea name="thongtin" rows="6" cols="50"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="right">
+               
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+</html>

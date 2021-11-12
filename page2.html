@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/index.css" rel="stylesheet">
+    <script src="JS/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/search.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Thể Loại</a>
+                    <ul class="submenu">
+                        <li><a href="">Thiếu Nhi</a></li>
+                        <li><a href="">Công Nghệ</a></li>
+                        <li><a href="">Kinh Tế</a></li>
+                        <li><a href="">Chính Trị</a></li>
+                        <li><a href="">Lịch Sử</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>
+                    <input type="search" id="search" onkeyup ="Search()" placeholder="Tìm kiếm">
+                    </span>
+                </li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="">Đăng Nhập</a></li>
+                <li><a href="">Đăng Ký</a></li>
+            </ul>
+
+        </div>
+        <div class="banner">
+            <div class="slide">
+                <img id="img" onclick="changeImage()" src="banner1.jpg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                
+            </div>
+            <div class="content">
+                <h2>Các sản phẩm bán chạy</h2>
+                <div>
+                    <img src="Images/Lịch Sử/1.jpg">
+                    <p>Lược Sử Thế Giới <br> <br> GIÁ: 80.000 VNĐ</p>
+                </div>
+                <div>
+                    <img src="Images/Lịch Sử/2.jpg">
+                    <p>Lịch Sử Thế Giới Theo Dòng Sự Kiện <br> <br> GIÁ: 60.000 VNĐ</p>
+                </div>
+                <div>
+                    <img src="Images/Lịch Sử/3.jpg">
+                    <p>Lịch Sử Thế Giới <br> <br> GIÁ: 40.000 VNĐ</p>
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <img src="Images/Lịch Sử/4.jpg">
+                    <p>Lĩnh Nam Chích Quái <br> <br> GIÁ: 80.000 VNĐ</p>
+                </div>
+                <div>
+                    <img src="Images/Lịch Sử/5.jpg">
+                    <p>Lịch Sử Loài Người <br> <br> GIÁ: 100.000 VNĐ</p>
+                </div>
+                <div>
+                    <img src="Images/Lịch Sử/6.jpg">
+                    <p>Tường Khổng Lồ Về Lịch Sử Thế Giới <br> <br> GIÁ: 50.000 VNĐ</p>
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <img src="Images/Lịch Sử/7.jpg">
+                    <p>Trí Tuệ Của Người Xưa <br> <br> GIÁ: 90.000 VNĐ</p>
+                </div>
+                <div>
+                    <img src="Images/Lịch Sử/8.jpg">
+                    <p>Mưu Lược Cổ Nhân Trung Hoa <br> <br> GIÁ: 50.000 VNĐ</p>
+                </div>
+                <div>
+                    <img src="Images/Lịch Sử/9.jpg">
+                    <p>Lời Dạy Của Thánh Hiền <br> <br> GIÁ: 50.000 VNĐ</p>
+                </div>
+                <span>
+                    <button onclick="nextpage()">1</button>
+                    <script>
+                        function nextpage(){
+                            location.assign("index.html");
+                        }
+                    </script>
+                    <button onclick="nextpage()">2</button>
+                    <script>
+                        function nextpage(){
+                            location.assign("page2.html");
+                        }
+                    </script>
+                </span>
+            </div>
+            <div class="right">
+               
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+</html>
